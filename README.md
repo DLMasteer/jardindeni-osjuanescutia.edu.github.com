@@ -1,1 +1,0 @@
-# jardindeni-osjuanescutia.edu.github.com

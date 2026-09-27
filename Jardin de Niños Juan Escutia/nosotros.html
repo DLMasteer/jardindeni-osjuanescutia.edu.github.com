@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jardín de Niños Juan Escutia — Nosotros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1f3a5c;--navy-d:#14283f;--gold:#b8903c;--teal:#3f7c74;--terra:#a8543c;--cream:#faf7f1;--card:#fff;--line:#e3dac6;--ink:#2b2b2b;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);}
+  h1,h2,h3{font-family:'Lora',serif;color:var(--navy);margin:0;}
+  a{text-decoration:none;color:inherit;}
+  header{display:flex;align-items:center;gap:12px;padding:14px 24px;background:var(--card);border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .brand{display:flex;align-items:center;gap:10px;margin-right:auto;}
+  .brand .logo{width:42px;height:42px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .brand span{font-family:'Lora',serif;font-weight:700;font-size:1.1rem;color:var(--navy);}
+  .topbtn{border:1.5px solid var(--navy);border-radius:8px;padding:8px 16px;font-weight:600;font-size:.85rem;color:var(--navy-d);background:#fff;transition:.15s;}
+  .topbtn:hover,.topbtn.active{background:var(--navy);color:#fff;}
+  .icon{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--navy);display:flex;align-items:center;justify-content:center;background:#fff;transition:.15s;font-size:1rem;}
+  .icon:hover{background:var(--gold);border-color:var(--gold);}
+
+  .layout{display:flex;max-width:1080px;margin:0 auto;align-items:flex-start;}
+  .sidebar{width:64px;flex-shrink:0;padding:22px 12px;position:relative;z-index:15;}
+  .hamburger{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--navy);background:#fff;font-size:1.15rem;cursor:pointer;color:var(--navy-d);position:relative;z-index:16;}
+  .side-menu{position:absolute;top:76px;left:12px;max-height:0;overflow:hidden;transition:.25s ease;width:170px;background:#fff;border-radius:8px;box-shadow:0 10px 24px rgba(20,30,45,.2);z-index:16;}
+  .side-menu.open{max-height:220px;}
+  .side-menu a{display:block;padding:12px 14px;border:1px solid var(--line);background:#fff;font-weight:600;font-size:.88rem;color:var(--navy-d);margin-top:-1px;}
+  .side-menu a:first-child{border-radius:8px 8px 0 0;margin-top:0;}
+  .side-menu a:last-child{border-radius:0 0 8px 8px;}
+  .side-menu a:hover,.side-menu a.active{background:#dcdcdc;}
+  main{flex:1;min-width:0;padding:26px 24px 60px;}
+
+  h1.page-title{font-size:1.7rem;margin-bottom:16px;border-bottom:2px solid var(--gold);display:inline-block;padding-bottom:4px;}
+  main > p{max-width:64ch;line-height:1.7;color:#3d3d3d;font-size:.98rem;}
+  footer{text-align:center;padding:22px;color:#7a7a7a;font-size:.85rem;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="index.html">
+    <span class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 8h18L12 2z" fill="#fff"/><rect x="5" y="8" width="14" height="12" fill="#fff" opacity=".9"/><rect x="10" y="13" width="4" height="7" fill="#1f3a5c"/></svg></span>
+    <span>Jardín de Niños Juan Escutia</span>
+  </a>
+  <a class="topbtn active" href="nosotros.html">NOSOTROS</a>
+  <a class="topbtn" href="contacto.html">CONTACTO</a>
+  <a class="icon" href="avisos.html" title="Notificaciones">🔔</a>
+  <a class="icon" href="contacto.html" title="Mensajes">💬</a>
+  <a class="icon" href="perfil.html" title="Perfil">👤</a>
+</header>
+
+<div class="layout">
+  <div class="sidebar">
+    <button class="hamburger" onclick="document.getElementById('sideMenu').classList.toggle('open')">☰</button>
+    <div class="side-menu" id="sideMenu">
+      <a href="calendario.html">Calendario</a>
+      <a href="documentos.html">Documentos</a>
+      <a href="avisos.html">Avisos</a>
+    </div>
+  </div>
+
+  <main>
+    <h1 class="page-title">Nosotros</h1>
+    <p>Somos una comunidad educativa comprometida con el desarrollo integral de cada alumno, combinando programas académicos sólidos con actividades artísticas, deportivas y de valores. Trabajamos de la mano con las familias para acompañar a cada estudiante en su formación.</p>
+  </main>
+</div>
+
+<footer>© 2026 Jardín de Niños Juan Escutia · Portal para padres de familia</footer>
+</body>
+</html>
